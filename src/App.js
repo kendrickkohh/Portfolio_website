@@ -1,9 +1,16 @@
+import { useState } from "react";
+import Home from "./Components/Home";
+import Navbar_mobile from "./Components/Navbar/Navbar_mobile";
+
 function App() {
-  return (
-    <div className="App">
-      <h1>hi</h1>
-    </div>
-  );
+    const [showNav, setShowNav] = useState(false);
+
+    return (
+        <div>
+            {showNav === true && <Navbar_mobile />}
+            <Home setShowNav={setShowNav} />
+        </div>
+    );
 }
 
 export default App;
