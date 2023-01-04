@@ -7,7 +7,7 @@ function App() {
 
     return (
         <div>
-            {showNav === true && <Navbar_mobile />}
+            {showNav === true && <Navbar_mobile setShowNav={setShowNav} />}
             <Home setShowNav={setShowNav} />
         </div>
     );

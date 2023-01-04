@@ -29,6 +29,7 @@ h1,
 h2,
 h3,
 h4 {
+    font-weight: 400;
     text-transform: capitalize;
     line-height: 1.25;
 }
@@ -48,6 +49,35 @@ h4 {
     cursor: pointer;
 }
 /* ------- header ------- */
+
+/* ------- navbar_mobile ------- */
+.navbar_mobile {
+    font-family: "Cormorant Garamond", serif;
+    background-color: #d9dddc;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_mobile img {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.navbar_mobile_main h2 {
+    cursor: pointer;
+}
+
+/* ------- navbar_mobile ------- */
 
 /* ------- home ------- */
 .home {
