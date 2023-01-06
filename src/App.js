@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Navbarmobile from "./Components/Navbar/Navbarmobile";
 import Portfolio from "./Components/Portfolio";
+import content from "./Components/Content.json";
 
 function App() {
     const [showNav, setShowNav] = useState(false);
@@ -21,7 +22,7 @@ function App() {
                 />
             )}
             {showPage === 0 && <Home />}
-            {showPage === 1 && <Portfolio />}
+            {showPage === 1 && <Portfolio images={content.images} />}
             {showPage === 2 && <Computing />}
             {showPage === 3 && <Aboutme />}
             <Footer />

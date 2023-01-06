@@ -114,6 +114,13 @@ h4 {
 }
 /* ------- footer ------- */
 
+/* ------- portfolio ------- */
+.portfolio-item {
+    max-width: 80%;
+    margin-bottom: 1em;
+}
+/* ------- portfolio ------- */
+
 /* ------- about me ------- */
 .aboutme-profile {
     width: 180px;
