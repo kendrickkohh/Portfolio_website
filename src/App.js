@@ -23,7 +23,7 @@ function App() {
             )}
             {showPage === 0 && <Home />}
             {showPage === 1 && <Portfolio images={content.images} />}
-            {showPage === 2 && <Computing />}
+            {showPage === 2 && <Computing skills={content.skills} />}
             {showPage === 3 && <Aboutme />}
             <Footer />
         </div>

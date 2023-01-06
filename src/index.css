@@ -116,10 +116,45 @@ h4 {
 
 /* ------- portfolio ------- */
 .portfolio-item {
-    max-width: 80%;
+    max-width: 85%;
     margin-bottom: 1em;
 }
 /* ------- portfolio ------- */
+
+/* ------- computing ------- */
+.skills-container {
+    margin: auto;
+    text-align: left;
+    width: 85%;
+}
+
+.skills-item {
+    margin-bottom: 1em;
+}
+
+.skills-item h3 {
+    margin: 0;
+    margin-bottom: 0.3em;
+}
+
+.progressbar {
+    overflow: hidden;
+    width: 60%;
+    height: 10px;
+    border-radius: 5px;
+    border-color: #000000;
+    background-color: #eee;
+}
+
+.progressPercent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+}
+/* ------- computing ------- */
 
 /* ------- about me ------- */
 .aboutme-profile {

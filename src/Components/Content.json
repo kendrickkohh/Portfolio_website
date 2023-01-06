@@ -13,5 +13,18 @@
         "/images/Portfolio/11.jpeg",
         "/images/Portfolio/12.jpeg",
         "/images/Portfolio/13.jpeg"
+    ],
+
+    "skills": [
+        { "skill": "ReactJS", "percentage": "80%", "color": "#5FB7FF" },
+        { "skill": "HTML, CSS", "percentage": "80%", "color": "#F85756" },
+        { "skill": "Python", "percentage": "70%", "color": "#C65BD9" },
+        { "skill": "C Programming", "percentage": "50%", "color": "#FFC850" },
+        {
+            "skill": "Heroku, Git, VSCode",
+            "percentage": "80%",
+            "color": "#2FA499"
+        },
+        { "skill": "Figma", "percentage": "70%", "color": "#4054B2" }
     ]
 }
