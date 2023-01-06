@@ -9,6 +9,7 @@ const Header = ({ setShowNav }) => {
                 onClick={() => {
                     setShowNav(true);
                 }}
+                alt="nav-icon"
             />
         </div>
     );
