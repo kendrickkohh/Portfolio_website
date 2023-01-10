@@ -1,13 +1,6 @@
 import React from "react";
 
-const Navbarmobile = ({ setShowNav, setShowPage }) => {
-    const navItems = [
-        { index: 0, item: "Home" },
-        { index: 1, item: "Portfolio" },
-        { index: 2, item: "Computing" },
-        { index: 3, item: "About Me" },
-    ];
-
+const Navbarmobile = ({ setShowNav, showPage, setShowPage, navItems }) => {
     return (
         <div className="navbar_mobile">
             <img
@@ -20,6 +13,11 @@ const Navbarmobile = ({ setShowNav, setShowPage }) => {
             <div className="navbar_mobile_main">
                 {navItems.map((item) => (
                     <h2
+                        className={
+                            showPage == item.index
+                                ? "nav-mobile-item-selected"
+                                : "nav-mobile-item"
+                        }
                         onClick={() => {
                             setShowPage(item.index);
                             setShowNav(false);

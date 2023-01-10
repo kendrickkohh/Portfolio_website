@@ -26,5 +26,12 @@
             "color": "#2FA499"
         },
         { "skill": "Figma", "percentage": "70%", "color": "#4054B2" }
+    ],
+
+    "navItems": [
+        { "index": 0, "item": "Home" },
+        { "index": 1, "item": "Portfolio" },
+        { "index": 2, "item": "Computing" },
+        { "index": 3, "item": "About Me" }
     ]
 }

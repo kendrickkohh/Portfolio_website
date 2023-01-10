@@ -14,11 +14,18 @@ function App() {
 
     return (
         <div>
-            <Header setShowNav={setShowNav} />
+            <Header
+                setShowNav={setShowNav}
+                setShowPage={setShowPage}
+                showPage={showPage}
+                navItems={content.navItems}
+            />
             {showNav === true && (
                 <Navbarmobile
                     setShowNav={setShowNav}
                     setShowPage={setShowPage}
+                    showPage={showPage}
+                    navItems={content.navItems}
                 />
             )}
             {showPage === 0 && <Home />}

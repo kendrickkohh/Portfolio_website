@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = ({ setShowNav }) => {
+const Header = ({ setShowNav, showPage, setShowPage, navItems }) => {
     return (
         <div className="header">
             <h1>Kendrick Koh</h1>
@@ -11,6 +11,22 @@ const Header = ({ setShowNav }) => {
                 }}
                 alt="nav-icon"
             />
+            <div className="nav-desktop">
+                {navItems.map((item) => (
+                    <h3
+                        className={
+                            showPage == item.index
+                                ? "nav-desktop-item-selected"
+                                : "nav-desktop-item"
+                        }
+                        onClick={() => {
+                            setShowPage(item.index);
+                        }}
+                    >
+                        {item.item}
+                    </h3>
+                ))}
+            </div>
         </div>
     );
 };
